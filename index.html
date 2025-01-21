@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guia HTML</title>
+</head>
+<body>
+    <h1>HTML</h1>
+    <div id="maior">
+        <div id="filho1">
+            <h2>HEAD</h2>
+                <p>Não possui tag's visiveis, apenas tag de configurações do documento HTML.</p>
+                <br>
+                <p><code>!DOCTYPE-html ---</code> Instrução para o navegador que diz qual versão, ou, qual documento do HTML estamos trabalhando</p>
+                <p><code>base --- </code> primeira meta tag que indica onde esta armazenado conteúdos de hyperlinks do documento html, sendo referência root caso utilize uma tag de hyperlinks. os únicos atributos são <b>href</b>="" (obrigatório) e <b>Target</b>   </p>
+                <p><code>html lang="pt-br"</code> Lang é um ?parâmetro? da tag html (tag root) que indica qual idioma do documento html.</p>
+                <p><code>title --- </code> Título do documento html, pode conferir na barra do navegador.</p>
+        </div>
+
+        <div id="filho2">
+            <h2>Tipos de atributos</h2>
+                <p><code>boolean --- </code>atributo com duas possibilidades, caso <b>TRUE</b> o atributo é ativado; caso <b>FALSE</b> o atributo é omitido</p>
+                <p><code>submit --- </code> atributo para elemento do tipo de enviar dados.</p>
+                <H2>BODY</H2>
+                <p>É o container de todos elementos visiveis</p>
+                <br>
+                <p><code> p --- </code> Parágrafo, importante para definir que há um conteúdo, facilitando na formatação.</p>
+                <p><code>tag's H, H1 até H6 ---</code> Cabeçalho, </p>
+                <br>
+                <p><code> a --- </code> Tag âncora, sera para navegar na web por link</p>
+                <h3>atributos âncora</h3>
+                    <p><code>href="link" --- </code> indica qual caminho a seguir, se o caminho for um #id, poderá navegar para parte especifica na propria pagina web</p>
+                    <p><code>Target="x" --- </code> indica qual tipo de frame e onde iá levar o link.</p>
+                    <p><code>rel="x" --- </code> indica qual tipo de arquivo será chamado.</p>
+                    <p><code>media="x" --- </code>em qual tipo de media será impresso.</p>
+                    <p><code>hreflang="x" ---</code> indica qual tipo de lingua esta o caminho chamado.</p>
+                    <p><code>type="x" --- </code> tipo de conteúdo codificado esta a página MIME types.</p>
+                    <p><code>downloado="x"</code> orienta o browser para que facilitar a identificar no desenvolvimento o tipo de arquivo.</p>
+                    <br>
+                <p><code>audio ---</code>tag que reproduz audio no documento html</p>
+                <h3>atributos audio</h3>
+                    <p><code>src --- </code>atributo que direciona o caminho onde esta armazenado o arquivo</p>
+                    <p><code>autoplay --- </code> atributo (boolean) que inicializa o audio junto ao carregamento da página HTML. </p>
+                    <p><code>mute --- </code>atributo (boolean) que silencia o audio junto ao carregamento da página HTML.</p>
+                    <p><code>controls --- </code>atributo (boolean) que disponibiliza o controle de audio ao usuário</p>
+                    <p><code>loop --- </code>atributo (boolean) reinicializa o audio toda vez que tremina.</p>
+                    <p><code></code></p>
+                    <br>
+                <p><code>abbr --- </code> tag que indica uma abreviação do texto, com seu único atributo <code>title</code>.</p>
+                <p><code>b --- </code>tag contida em um fluxo de frase cujo o objetivo é destacar como negrito; não possui atributos.</p>
+                <p><code>bdo --- </code> tag que indica o fluxo que a frase é escrita, com o atributo <b>DIR </b> possibilitamos a dirção (ltr ou rtl).</p>
+                <p><code>bloquote --- </code>o elemento representa citação de ountra fonte, contendo elementos fraseados e geralmente no rodapé citando os autores e a obra. (destacar o blockquote)</p>
+                <p><code>br --- </code>O elemento br representa uma quebra de linha. Os elementos<b> br</b> devem ser utilizados apenas para quebras de linha que realmente façam parte do conteúdo, como em poemas ou endereços. Os elementos br não devem ser utilizados para separar grupos temáticos em um parágrafo. Usar apenas um <b>br</b> por linha!</p>
+                <p><code>cite --- </code> citação curta que pode informar o autor ou uma obra externa ao documento, geralmente apresentada no rodapé.</p>
+                <p><code>map --- </code> mapear e cirar area clicavel, contem um atributo <i>name</i> para identificar a imagem.</p>
+                <br>
+                <p><code> area ---</code>contido na tag <i>map</i>, a tag area serve para definir locais 'clicaveis' dentro de um poligno desejado, geralmente usado em imagens.</p>
+                <h3>atributos area</h3>
+                    <p><code>alt --- </code> frase alternativa caso não carregue a imagem.</p>
+                    <p><code>shape --- </code> forma de mapear a area, seja 'circle', 'rect' ou 'poly'.</p>
+                    <p><code>href="#" ---</code>caminho clicavel para area mapeada.</p>
+                    <p><code>coords=" " --- </code> coordenadas de mapeamento da imagem, no Paint, encontre as coordenadas e separe-as com.</p>
+                    <br>
+                <p><code>article --- </code> tag semântica, ela representa uma sessão independente no documento, utilizada opcionalmente quando o conteúdo seja diferente de "h1, nav, footer"</p>
+                <p><code>aside --- </code>tag semântica, é um conteúdo secundário deve estar indiretamente relacionado ao conteúdo circundante. geralmente usado para publicidade, nota de curiosidades, citação de um artigo ou uma lista de link (nav), "blogroll"</p>
+                <br>
+                <p><code>button --- </code>adiciona um botão no documento, pode ser contido em um fraseamento e ser fraseado.</p>
+                <h3>atributos button</h3>
+                    <p><code>autofocus --- </code> ao carregar a página web o elemento ja esta focado para enviar dados.</p>
+                    <p><code>disable --- </code>o elemento esta desabilitado</p>
+                    <p><code>form --- </code>associa o botão a um formulário</p>
+                    <p><code>formaction --- </code> ao enviar os dados associa o botão a uma URL</p>
+                    <p><code>formenctype --- </code> atributo para enviar arquivos (PHP)</p>
+                    <p><code>formmethod --- </code>### tipo de formulários, se é <b>post</b> ou <b>get</b></p>
+                    <p><code>formvalidate --- </code>validação de formulário</p>
+                    <p><code>formtarget --- </code>local onde vai abrir o formulário</p>
+                    <p><code>name --- </code>noome do botão</p>
+                    <p><code>value --- </code> qual formato da validação do botão, <b>radio, checkbox...</b></p>
+                    <h4>tipos de button</h3>
+                        <p><code>submit --- </code> botão de enviar dados</p>
+                        <p><code>reset ---</code> botão de limpar dados</p>
+                        <p><code>button --- </code> botão genérico</p>
+                    <br>
+                    <button id="botao" type="submit" form="f_cadastro" autofocus onclick="alert('dados enviados!')">enviar</button>
+            <h2>Formulário</h2>
+                <p><code>Fieldset --- </code> tag de agrupamento de elementos de um formulário; aceita o atributo boolean <b>disabled e legend.</b></p>
+                <blockquote>
+                    <p>disabled desabilita o grupo de elementos fieldset; com JavaScript possibilitamos disponibilizar como a próxima etapa do formulário.</p>
+                    <p>o atributo Legend é filho direto de fieldset.</p>
+                </blockquote>
+                <p><code>textarea --- </code> área de inserção de texto no formulário disponibilizando atributos <b>cols</b> e <b>rows</b>.</p>
+                <blockquote>
+                    <p>aceita apneas entrada de textos, não possibilita tags html.</p>
+                    <p>possibilita atributos <b>autofocus e maxlength</b>.</p>
+                </blockquote>
+            <h3>atributos</h3>
+                <p><code>action --- </code> URL receberá o envio dos dados do formulário.</p>
+                <p><code>autocomplete --- </code>autocompletar campos ativados.</p>
+                <p><code>enctype --- </code>codificação (tipo) dos dados enviados.</p>
+                <p><code>method --- </code>método de envio de dados (get ou post).</p>
+                <p><code>name --- </code>nome relacionado ao formulário.</p>
+                <p><code>novalidade --- </code>desabilita a validação pelo browser.</p>
+                <p><code>target --- </code>como a página de destino (action) será aberta.</p>
+                
+                <h3>input atributos</h3>
+                <p><code>name --- </code>nome identificação do input.</p>
+                <p><code>value --- </code>valor demonstrado no input.</p>
+                <p><code>maxlength --- </code>quantidade de carcteres no valor do input (quantidade de letras).</p>
+                <p><code>size --- </code>quantidade de visibilidade de caracteres no valor do input. (tamanho da barra).</p>
+                <p><code>required --- </code>atributo tipo boolean, define o input como campo obrigatório do formulário.</p>
+                <p><code>pattern --- </code> Formatação da caixa de input para os dados serer inseridos de forma desejada.</p>
+                <p><code>placeholder --- </code> informar campo obrigatório de dados do input.</p>
+                <p><code>step ---</code> passo de contagem de um número a outro</p>
+                
+                <p><code>type --- </code>tipo de imput a ser trabalhado.</p>
+            <h3>tipos de input</h4>
+                <p><code>checkbox --- </code>caixa de verificação.</p>
+                <blockquote>   
+                    <p>quando criar este tipo de input, facilitar ao maximo a leitura para o banco de dados</p>
+                    <p>criar "<b>name</b>" diferentes, pois quando analizar a verificação no server side, facilitará a leitura.</p>
+                </blockquote>
+                <p><code>radio --- </code>radio de seleção único elemento.</p>
+                <blockquote>
+                    <p>diferente do checkbox, input radio <b>deve</b> conter o mesmo <b>name</b> de identificação.
+                    desta forma não há como selecionar mais de um radio.</p>
+                    <p>adicionar o atributo checked para o raidio ja inicializar com marcação. (checked é um atributo booleano)</p>
+                </blockquote>
+                <p><code>time --- </code> Tipo de input que trabalha com horas.</p>
+                <blockquote>
+                    <p> este tipo de input possibilita receber o atributos 'min' e 'max', definindo o horário minimo e maximo no input.</p>
+                </blockquote>
+                <p><code>Date --- </code> tipo de input que possibilita a escolha de dia, mês e ano; possibilita os atributos 'min' e 'max'</p>
+                <p><code>datetime-local --- </code> tipo de input que trabalha com a data e hora na mesma caixa input.</p>
+                <p><code>month --- </code> tipo de input que disponibiliza apenas a caixa que retorna o mês.</p>
+                <p><code>week --- </code>tipo de input que desponibiliza uma caixa que ajuda a retornar a semana do mês.</p>
+                <p><code>hidden --- </code> input "invisivel" com o objetivo de enviar arquivos para o formulário sem interação com usuário</p>
+                <p><code>color --- </code> caixa de input que possibilita a escolha de uma cor, e retorna um valor hexadecimal.</p>
+                <p><code>email --- </code> caixa de input que recebe email. (apenas será tratado no banco de dados)</p>
+                <p><code>image --- </code> input image permite e inserção de uma imagem tipo botão no formulário. aceita atributo "src"</p>
+                <p><code>tell --- </code> caixa input tipo texto para inserir o numero de telefone.</p>
+                <blockquote>
+                    <p>boas práticas inserir o atributo <b>pattern</b> e <b>placeholder</b> para formatar como deve ser inserido o texto</p>
+                </blockquote>
+                <p><code>number --- </code> caixa input tipo números; aceita atributos "setp", "min" e "max"</p>
+                <p><code>search ---</code> caixa de input tipo texto próprio para entrada de "string" para pesquisa.</p>
+                <p><code>url --- </code>caixa de input tipo texto que envia uma url.</p>
+                <blockquote>
+                    <p>boas práticas inserir o <b>placeholder</b> para informar o formato aceito pelo formulário;</p>
+                    <p>inserir o atributo <b>pattern</b> para formatar a validação do campo de texto da url.</p>
+                </blockquote>
+                <p><code>file --- </code> caixa input para inserção de arquivos no formulario</p>
+                <blockquote>
+                    <p>
+                        definir o <b>enctype</b> na tag "form" para compreender o tipo de arquivo que será trabalhado em tal formulário;
+                    </p>
+                    <p>
+                        há possibilidade de inserir o atributo "multiple"(boolean) para enviar mais de um arquivo por vez;
+                    </p>
+                    <p>
+                        definir o atributo <b>accept</b> para filtar o tipo de arquivo que o input irá trabalhar.
+                    </p>
+                </blockquote>
+            <h4>tipos de accept file</h4>
+                <p><code>accept=".doc,.docx" --- </code>para filtar e enviar arquivos tipo <b>.doc</b> e <b>.docx</b></p>
+                <p><code>accept="application/msword" --- </code> filtar e enviar arquivo do aplicativo word</p>
+                <p><code>accept="image/*,.pdf --- </code> filtar e enviar arquivo do tipo <b>imagem</b> e tipo <b>.pdf</b></p>
+                <p><code>accept=".jpg,.gif,.png"  --- </code> filtrar e enviar arquivo do tipo <b>.jpg</b>, <b>.gif</b>, <b>.png</b></p>
+            <h3>select</h3>
+            <p>Tag de controle que fornece um menu de opções</p>
+            <p><code>name --- </code>nome identificação do select</p>
+            <p><code>multiple --- </code> atributo boolean que permite a seleção de mais de um item option.</p>
+            <p><code>size --- </code> atributo que permite a quantidade de itens <b>option</b> a ser observado.</p>
+            <p><code>option --- </code> é usado para criar um controle que representa um item dentro de uma tag <b>select</b></p>
+            <h4>option atributos</h4>
+                <p><code>value --- </code> ao inves de enviar o texto ao banco de dados, envia o value que pode ser "comprimido" para facilitar no server side e evitar um campo de dados grande, ou até mesmo o envio do código de um item.</p>
+            
+           </div>   
+    </div>
+</body>
+</html>
