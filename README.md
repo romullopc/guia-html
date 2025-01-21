@@ -1,3 +1,3 @@
 #Guia de estudos em HTML
-Página web pessoal para estudos e revisão de tags HTML.
-https://romullopc.github.io/guia-html/
+<p>Página web pessoal para estudos e revisão de tags HTML.</p>
+<p></p>https://romullopc.github.io/guia-html/</p>
