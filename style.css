@@ -13,6 +13,10 @@ body {
     background-color:aliceblue;
 }
 
+section{
+    background-color: rgb(255, 214, 214);
+}
+
 p { 
     font-family: sans-serif;
     font-weight: normal;
@@ -39,8 +43,9 @@ h2 {
 }
 
 h3 {
-    color: brown;
-    padding: 10px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+
 }
 
 h4{
@@ -68,7 +73,7 @@ h5{
 }
 
 code {
-    
+    color: brown;
     font-weight: 550;
 }
 
@@ -92,7 +97,7 @@ i {
 }
 
 blockquote{
-    background-color: rgb(241, 185, 185);
+    background-color: rgb(255, 237, 211);
     margin: 10px;
     width: 600px;
 }
