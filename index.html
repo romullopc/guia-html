@@ -23,14 +23,26 @@
             <h2>Tipos de atributos</h2>
                 <p><code>boolean --- </code>atributo com duas possibilidades, caso <b>TRUE</b> o atributo é ativado; caso <b>FALSE</b> o atributo é omitido</p>
                 <p><code>submit --- </code> atributo para elemento do tipo de enviar dados.</p>
-                <H2>BODY</H2>
+            <h2>tags semânticas</h2>
+            <p><code>article --- </code> é um elemento semântico que representa um conteúdo independente, que pode ser distribuído ou reutilizado de forma isolada. Ela é ideal para marcar conteúdos como artigos de revista, postagens de blog, notícias ou qualquer outra seção de conteúdo autocontida; Utilizada opcionalmente quando o conteúdo seja diferente de "header, nav, footer"</p>
+            <blockquote>
+                <p>Principais características da tag <i>article</i>:</p>
+                <p>Conteúdo Autônomo: O conteúdo dentro de uma tag <i>article</i> faz sentido sozinho, sem depender de outros elementos.</p> 
+                <p>Reutilizável: Pode ser compartilhado ou republicado independentemente, como em feeds RSS.</p>
+                <p>Exemplos de uso: Postagens de blog, artigos em jornais, revistas, comentários ou respostas em um fórum.</p>
+            </blockquote>
+            <p>aside</p>
+            <p>footer</p>
+            <p>main</p>
+            <p>nav</p>
+            <p>section</p>
+            
+            <H2>BODY</H2>
                 <p>É o container de todos elementos visiveis</p>
-                <br>
-                <p><code> p --- </code> Parágrafo, importante para definir que há um conteúdo, facilitando na formatação.</p>
+                <p><code>p ---</code> Parágrafo, importante para definir que há um conteúdo, facilitando na formatação.</p>
                 <p><code>tag's H, H1 até H6 ---</code> Cabeçalho. </p>
-                <br>
-                <p><code> a --- </code> Tag âncora, sera para navegar na web por link</p>
-                <section class="divisao">
+                <p><code>a ---</code> Tag âncora, serve para navegar na web por link.</p>
+                <section id="atributos_ancora" class="divisao">.
                     <h3>atributos âncora</h3>
                         <p><code>href="link" --- </code> indica qual caminho a seguir, se o caminho for um #id, poderá navegar para parte específica na propria pagina web.</p>
                         <blockquote>
@@ -42,34 +54,36 @@
                         <p><code>hreflang="x" ---</code> indica qual tipo de lingua esta o caminho chamado.</p>
                         <p><code>type="x" --- </code> tipo de conteúdo codificado esta a página MIME types.</p>
                         <p><code>download="x"</code> orienta o browser para que facilitar a identificar no desenvolvimento o tipo de arquivo.</p>    
-                </section><br>
+                </section>
                 <p><code>audio ---</code>tag que reproduz audio no documento html</p>
-                <h3>atributos audio</h3>
-                    <p><code>src --- </code>atributo que direciona o caminho onde esta armazenado o arquivo</p>
-                    <p><code>autoplay --- </code> atributo (boolean) que inicializa o audio junto ao carregamento da página HTML. </p>
-                    <p><code>mute --- </code>atributo (boolean) que silencia o audio junto ao carregamento da página HTML.</p>
-                    <p><code>controls --- </code>atributo (boolean) que disponibiliza o controle de audio ao usuário</p>
-                    <p><code>loop --- </code>atributo (boolean) reinicializa o audio toda vez que tremina.</p>
-                    <p><code></code></p>
-                    <br>
-                <p><code>abbr --- </code> tag que indica uma abreviação do texto, com seu único atributo <code>title</code>.</p>
+                <section id="atributos_audio" class="divisao">
+                    <h3>atributos audio</h3>
+                        <p><code>src --- </code>atributo que direciona o caminho onde esta armazenado o arquivo</p>
+                        <p><code>autoplay --- </code> atributo (boolean) que inicializa o audio junto ao carregamento da página HTML. </p>
+                        <p><code>mute --- </code>atributo (boolean) que silencia o audio junto ao carregamento da página HTML.</p>
+                        <p><code>controls --- </code>atributo (boolean) que disponibiliza o controle de audio ao usuário</p>
+                        <p><code>loop --- </code>atributo (boolean) reinicializa o audio toda vez que tremina.</p>
+                </section>
+                <p><code>abbr ---</code> usada para definir uma abreviação ou sigla. Quando você passa o cursor sobre o texto, aparece a forma completa da abreviação, exemplo: <abbr title="HyperText Markup Language">HTML</abbr></p>
+                <p><code>address ---</code> utilizada para definir informações de contato ou endereço. Normalmente, é usada para identificar o autor de um documento ou artigo, incluindo informações como endereço, e-mail e telefone.</p>
+                <blockquote>
+                    <p>Um documento <abbr title="HyperText Markup Language">HTML</abbr> pode conter múltiplas <i>tags address</i>. No entanto, cada <i>tag address</i> deve ser usada para representar um único bloco de informações de contato, como o endereço do autor de um documento, o endereço de uma empresa, etc. Não há um limite estrito sobre quantas <i>tags address</i> podem ser usadas, mas é importante garantir que cada uma seja utilizada de maneira semântica e clara.</p>
+                </blockquote>
                 <p><code>b --- </code>tag contida em um fluxo de frase cujo o objetivo é destacar como negrito; não possui atributos.</p>
                 <p><code>bdo --- </code> tag que indica o fluxo que a frase é escrita, com o atributo <b>DIR </b> possibilitamos a dirção (ltr ou rtl).</p>
-                <p><code>bloquote --- </code>o elemento representa citação de ountra fonte, contendo elementos fraseados e geralmente no rodapé citando os autores e a obra. (destacar o blockquote)</p>
+                <p><code>blockquote --- </code>o elemento representa citação de ountra fonte, contendo elementos fraseados e geralmente no rodapé citando os autores e a obra. (destacar o blockquote)</p>
                 <p><code>br --- </code>O elemento br representa uma quebra de linha. Os elementos<b> br</b> devem ser utilizados apenas para quebras de linha que realmente façam parte do conteúdo, como em poemas ou endereços. Os elementos br não devem ser utilizados para separar grupos temáticos em um parágrafo. Usar apenas um <b>br</b> por linha!</p>
                 <p><code>cite --- </code> citação curta que pode informar o autor ou uma obra externa ao documento, geralmente apresentada no rodapé.</p>
                 <p><code>map --- </code> mapear e cirar area clicavel, contem um atributo <i>name</i> para identificar a imagem.</p>
-                <br>
-                <p><code> area ---</code>contido na tag <i>map</i>, a tag area serve para definir locais 'clicaveis' dentro de um poligno desejado, geralmente usado em imagens.</p>
-                <h3>atributos area</h3>
-                    <p><code>alt --- </code> frase alternativa caso não carregue a imagem.</p>
-                    <p><code>shape --- </code> forma de mapear a area, seja 'circle', 'rect' ou 'poly'.</p>
-                    <p><code>href="#" ---</code>caminho clicavel para area mapeada.</p>
-                    <p><code>coords=" " --- </code> coordenadas de mapeamento da imagem, no Paint, encontre as coordenadas e separe-as com.</p>
-                    <br>
-                <p><code>article --- </code> tag semântica, ela representa uma sessão independente no documento, utilizada opcionalmente quando o conteúdo seja diferente de "h1, nav, footer"</p>
-                <p><code>aside --- </code>tag semântica, é um conteúdo secundário deve estar indiretamente relacionado ao conteúdo circundante. geralmente usado para publicidade, nota de curiosidades, citação de um artigo ou uma lista de link (nav), "blogroll"</p>
-                <br>
+                <section id="atributos_area" class="divisao">
+                    <p><code> area ---</code> contido na tag <i>map</i>, a tag area serve para definir locais 'clicaveis' dentro de um poligno desejado, geralmente usado em imagens.</p>
+                    <h3>atributos area</h3>
+                        <p><code>alt ---</code> frase alternativa caso não carregue a imagem.</p>
+                        <p><code>shape ---</code> forma de mapear a area, seja 'circle', 'rect' ou 'poly'.</p>
+                        <p><code>href="#" ---</code> caminho clicavel para area mapeada.</p>
+                        <p><code>coords=" " ---</code> coordenadas de mapeamento da imagem, no Paint, encontre as coordenadas e separe-as.</p>
+                </section>
+                <p><code>aside --- </code>tag semântica, é um conteúdo secundário deve estar indiretamente relacionado ao conteúdo circundante. geralmente usado para publicidade, nota de curiosidades, citação de um artigo ou uma lista de <i>link</i>(nav), <i>"blogroll"</i>.</p>
                 <p><code>button --- </code>adiciona um botão no documento, pode ser contido em um fraseamento e ser fraseado.</p>
                 <h3>atributos button</h3>
                     <p><code>autofocus --- </code> ao carregar a página web o elemento ja esta focado para enviar dados.</p>
