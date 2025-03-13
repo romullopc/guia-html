@@ -14,7 +14,16 @@
                 <p>Não possui tag's visiveis, apenas tag de configurações do documento HTML.</p>
                 <br>
                 <p><code>!DOCTYPE-html ---</code> Instrução para o navegador que diz qual versão, ou, qual documento do HTML estamos trabalhando</p>
-                <p><code>base --- </code> primeira meta tag que indica onde esta armazenado conteúdos de hyperlinks do documento html, sendo referência root caso utilize uma tag de hyperlinks. os únicos atributos são <b>href</b>="" (obrigatório) e <b>Target</b>   </p>
+                <p><code>base --- </code> primeira meta tag que indica onde esta armazenado conteúdos de hyperlinks do documento html, sendo referência root caso utilize uma tag de hyperlinks.</p>
+                <section id="atributos_base" class="divisao">
+                    <p>atributos <b>base</b></p>
+                    <p><code>href=""</code> --- atributo obrigatório que indica o caminho dos hyperlinks</p>
+                    <blockquote>
+                        <p>A meta tag <b>base</b> é um facilitador de todos hyperlinks do HTML, quando invocado no documento, deve-se ocultar o nome diretório onde esta armezenado o documento referido no hyperlink.</p>
+                        <p>Caso adicione hyperlink que se refira a outro conteúdo, atente-se de voltar o diretório com o atalho "<b>../</b>" e oriente o caminho até o diretório desejado.</p>
+                    </blockquote>
+                    <p><code>target</code> --- indica onde e como será acessado o hyperlink</p>
+                </section>
                 <p><code>html lang="pt-br"</code> Lang é um ?parâmetro? da tag html (tag root) que indica qual idioma do documento html.</p>
                 <p><code>title --- </code> Título do documento html, pode conferir na barra do navegador.</p>
         </div>
@@ -31,7 +40,9 @@
                 <p>Reutilizável: Pode ser compartilhado ou republicado independentemente, como em feeds RSS.</p>
                 <p>Exemplos de uso: Postagens de blog, artigos em jornais, revistas, comentários ou respostas em um fórum.</p>
             </blockquote>
-            <p>aside</p>
+            <hr>
+            <p><code>aside --- </code>tag semântica, é um conteúdo secundário deve estar diretamente relacionado ao conteúdo circundante. geralmente usado para publicidade, nota de curiosidades, citação de um artigo ou uma lista de <i>link</i>(nav), <i>"blogroll"</i>.</p>
+            <hr>
             <p>footer</p>
             <p>main</p>
             <p>nav</p>
@@ -83,7 +94,6 @@
                         <p><code>href="#" ---</code> caminho clicavel para area mapeada.</p>
                         <p><code>coords=" " ---</code> coordenadas de mapeamento da imagem, no Paint, encontre as coordenadas e separe-as.</p>
                 </section>
-                <p><code>aside --- </code>tag semântica, é um conteúdo secundário deve estar indiretamente relacionado ao conteúdo circundante. geralmente usado para publicidade, nota de curiosidades, citação de um artigo ou uma lista de <i>link</i>(nav), <i>"blogroll"</i>.</p>
                 <p><code>button --- </code>adiciona um botão no documento, pode ser contido em um fraseamento e ser fraseado.</p>
                 <h3>atributos button</h3>
                     <p><code>autofocus --- </code> ao carregar a página web o elemento ja esta focado para enviar dados.</p>
