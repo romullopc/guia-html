@@ -47,7 +47,7 @@
             <p>main</p>
             <p>nav</p>
             <p>section</p>
-            
+        </div>
             <H2>BODY</H2>
                 <p>É o container de todos elementos visiveis</p>
                 <p><code>p ---</code> Parágrafo, importante para definir que há um conteúdo, facilitando na formatação.</p>
@@ -123,9 +123,14 @@
                         <p>É necessario utilizar JavaScript para manipular propriedades do <b>canvas</b></p>
                     </blockquote>
                 </section>
-                <h2>Formulário</h2>
-                <p><code>Fieldset --- </code> tag de agrupamento de elementos de um formulário; aceita o atributo boolean <b>disabled e legend.</b></p>
-                <blockquote>
+                <p><code>code</code> --- usado para definir um trecho de código de programação. Normalmente, ele é exibido em uma fonte monoespaçada, o que significa que cada caractere ocupa a mesma quantidade de espaço horizontal.</p>
+                <blockquote id="complemento_code">
+                    <p>A tag <code>code</code> é contido dentro da tag <code>pre</code>, para manter a formatação do código e respeitando as condições de hieraquia dos elementos <i>parent</i>. </p>
+                </blockquote>
+                <p><code>pre</pre></code> --- em HTML significa "<i>preformatted text</i>", ou seja, texto pré-formatado. Quando você usa essa tag, o texto dentro dela é exibido exatamente como foi escrito, preservando todos os espaços em branco, quebras de linha e a formatação.</p>
+            <h2>Formulário</h2>
+                <p><code>fieldset --- </code> tag de agrupamento de elementos de um formulário; aceita o atributo boolean <b>disabled e legend.</b></p>
+                <blockquote id="complemento_fieldset">
                     <p>disabled desabilita o grupo de elementos fieldset; com JavaScript possibilitamos disponibilizar como a próxima etapa do formulário.</p>
                     <p>o atributo Legend é filho direto de fieldset.</p>
                 </blockquote>
@@ -134,73 +139,71 @@
                     <p>aceita apneas entrada de textos, não possibilita tags html.</p>
                     <p>possibilita atributos <b>autofocus e maxlength</b>.</p>
                 </blockquote>
-            <h3>atributos</h3>
-                <p><code>action --- </code> URL receberá o envio dos dados do formulário.</p>
-                <p><code>autocomplete --- </code>autocompletar campos ativados.</p>
-                <p><code>enctype --- </code>codificação (tipo) dos dados enviados.</p>
-                <p><code>method --- </code>método de envio de dados (get ou post).</p>
-                <p><code>name --- </code>nome relacionado ao formulário.</p>
-                <p><code>novalidade --- </code>desabilita a validação pelo browser.</p>
-                <p><code>target --- </code>como a página de destino (action) será aberta.</p>
-                
+                <h3>atributos</h3>
+                    <p><code>action --- </code> URL receberá o envio dos dados do formulário.</p>
+                    <p><code>autocomplete --- </code>autocompletar campos ativados.</p>
+                    <p><code>enctype --- </code>codificação (tipo) dos dados enviados.</p>
+                    <p><code>method --- </code>método de envio de dados (get ou post).</p>
+                    <p><code>name --- </code>nome relacionado ao formulário.</p>
+                    <p><code>novalidade --- </code>desabilita a validação pelo browser.</p>
+                    <p><code>target --- </code>como a página de destino (action) será aberta.</p>         
                 <h3>input atributos</h3>
-                <p><code>name --- </code>nome identificação do input.</p>
-                <p><code>value --- </code>valor demonstrado no input.</p>
-                <p><code>maxlength --- </code>quantidade de carcteres no valor do input (quantidade de letras).</p>
-                <p><code>size --- </code>quantidade de visibilidade de caracteres no valor do input. (tamanho da barra).</p>
-                <p><code>required --- </code>atributo tipo boolean, define o input como campo obrigatório do formulário.</p>
-                <p><code>pattern --- </code> Formatação da caixa de input para os dados serer inseridos de forma desejada.</p>
-                <p><code>placeholder --- </code> informar campo obrigatório de dados do input.</p>
-                <p><code>step ---</code> passo de contagem de um número a outro</p>
-                
-                <p><code>type --- </code>tipo de imput a ser trabalhado.</p>
-            <h3>tipos de input</h4>
-                <p><code>checkbox --- </code>caixa de verificação.</p>
-                <blockquote>   
-                    <p>quando criar este tipo de input, facilitar ao maximo a leitura para o banco de dados</p>
-                    <p>criar "<b>name</b>" diferentes, pois quando analizar a verificação no server side, facilitará a leitura.</p>
-                </blockquote>
-                <p><code>radio --- </code>radio de seleção único elemento.</p>
-                <blockquote>
-                    <p>diferente do checkbox, input radio <b>deve</b> conter o mesmo <b>name</b> de identificação.
-                    desta forma não há como selecionar mais de um radio.</p>
-                    <p>adicionar o atributo checked para o raidio ja inicializar com marcação. (checked é um atributo booleano)</p>
-                </blockquote>
-                <p><code>time --- </code> Tipo de input que trabalha com horas.</p>
-                <blockquote>
-                    <p> este tipo de input possibilita receber o atributos 'min' e 'max', definindo o horário minimo e maximo no input.</p>
-                </blockquote>
-                <p><code>Date --- </code> tipo de input que possibilita a escolha de dia, mês e ano; possibilita os atributos 'min' e 'max'</p>
-                <p><code>datetime-local --- </code> tipo de input que trabalha com a data e hora na mesma caixa input.</p>
-                <p><code>month --- </code> tipo de input que disponibiliza apenas a caixa que retorna o mês.</p>
-                <p><code>week --- </code>tipo de input que desponibiliza uma caixa que ajuda a retornar a semana do mês.</p>
-                <p><code>hidden --- </code> input "invisivel" com o objetivo de enviar arquivos para o formulário sem interação com usuário</p>
-                <p><code>color --- </code> caixa de input que possibilita a escolha de uma cor, e retorna um valor hexadecimal.</p>
-                <p><code>email --- </code> caixa de input que recebe email. (apenas será tratado no banco de dados)</p>
-                <p><code>image --- </code> input image permite e inserção de uma imagem tipo botão no formulário. aceita atributo "src"</p>
-                <p><code>tell --- </code> caixa input tipo texto para inserir o numero de telefone.</p>
-                <blockquote>
-                    <p>boas práticas inserir o atributo <b>pattern</b> e <b>placeholder</b> para formatar como deve ser inserido o texto</p>
-                </blockquote>
-                <p><code>number --- </code> caixa input tipo números; aceita atributos "setp", "min" e "max"</p>
-                <p><code>search ---</code> caixa de input tipo texto próprio para entrada de "string" para pesquisa.</p>
-                <p><code>url --- </code>caixa de input tipo texto que envia uma url.</p>
-                <blockquote>
-                    <p>boas práticas inserir o <b>placeholder</b> para informar o formato aceito pelo formulário;</p>
-                    <p>inserir o atributo <b>pattern</b> para formatar a validação do campo de texto da url.</p>
-                </blockquote>
-                <p><code>file --- </code> caixa input para inserção de arquivos no formulario</p>
-                <blockquote>
-                    <p>
-                        definir o <b>enctype</b> na tag "form" para compreender o tipo de arquivo que será trabalhado em tal formulário;
-                    </p>
-                    <p>
-                        há possibilidade de inserir o atributo "multiple"(boolean) para enviar mais de um arquivo por vez;
-                    </p>
-                    <p>
-                        definir o atributo <b>accept</b> para filtar o tipo de arquivo que o input irá trabalhar.
-                    </p>
-                </blockquote>
+                    <p><code>name --- </code>nome identificação do input.</p>
+                    <p><code>value --- </code>valor demonstrado no input.</p>
+                    <p><code>maxlength --- </code>quantidade de carcteres no valor do input (quantidade de letras).</p>
+                    <p><code>size --- </code>quantidade de visibilidade de caracteres no valor do input. (tamanho da barra).</p>
+                    <p><code>required --- </code>atributo tipo boolean, define o input como campo obrigatório do formulário.</p>
+                    <p><code>pattern --- </code> Formatação da caixa de input para os dados serer inseridos de forma desejada.</p>
+                    <p><code>placeholder --- </code> informar campo obrigatório de dados do input.</p>
+                    <p><code>step ---</code> passo de contagem de um número a outro</p>               
+                    <p><code>type --- </code>tipo de imput a ser trabalhado.</p>
+                <h3>tipos de input</h4>
+                    <p><code>checkbox --- </code>caixa de verificação.</p>
+                    <blockquote>   
+                        <p>quando criar este tipo de input, facilitar ao maximo a leitura para o banco de dados</p>
+                        <p>criar "<b>name</b>" diferentes, pois quando analizar a verificação no server side, facilitará a leitura.</p>
+                    </blockquote>
+                    <p><code>radio --- </code>radio de seleção único elemento.</p>
+                    <blockquote>
+                        <p>diferente do checkbox, input radio <b>deve</b> conter o mesmo <b>name</b> de identificação.
+                        desta forma não há como selecionar mais de um radio.</p>
+                        <p>adicionar o atributo checked para o raidio ja inicializar com marcação. (checked é um atributo booleano)</p>
+                    </blockquote>
+                    <p><code>time --- </code> Tipo de input que trabalha com horas.</p>
+                    <blockquote>
+                        <p> este tipo de input possibilita receber o atributos 'min' e 'max', definindo o horário minimo e maximo no input.</p>
+                    </blockquote>
+                    <p><code>Date --- </code> tipo de input que possibilita a escolha de dia, mês e ano; possibilita os atributos 'min' e 'max'</p>
+                    <p><code>datetime-local --- </code> tipo de input que trabalha com a data e hora na mesma caixa input.</p>
+                    <p><code>month --- </code> tipo de input que disponibiliza apenas a caixa que retorna o mês.</p>
+                    <p><code>week --- </code>tipo de input que desponibiliza uma caixa que ajuda a retornar a semana do mês.</p>
+                    <p><code>hidden --- </code> input "invisivel" com o objetivo de enviar arquivos para o formulário sem interação com usuário</p>
+                    <p><code>color --- </code> caixa de input que possibilita a escolha de uma cor, e retorna um valor hexadecimal.</p>
+                    <p><code>email --- </code> caixa de input que recebe email. (apenas será tratado no banco de dados)</p>
+                    <p><code>image --- </code> input image permite e inserção de uma imagem tipo botão no formulário. aceita atributo "src"</p>
+                    <p><code>tell --- </code> caixa input tipo texto para inserir o numero de telefone.</p>
+                    <blockquote>
+                        <p>boas práticas inserir o atributo <b>pattern</b> e <b>placeholder</b> para formatar como deve ser inserido o texto</p>
+                    </blockquote>
+                    <p><code>number --- </code> caixa input tipo números; aceita atributos "setp", "min" e "max"</p>
+                    <p><code>search ---</code> caixa de input tipo texto próprio para entrada de "string" para pesquisa.</p>
+                    <p><code>url --- </code>caixa de input tipo texto que envia uma url.</p>
+                    <blockquote>
+                        <p>boas práticas inserir o <b>placeholder</b> para informar o formato aceito pelo formulário;</p>
+                        <p>inserir o atributo <b>pattern</b> para formatar a validação do campo de texto da url.</p>
+                    </blockquote>
+                    <p><code>file --- </code> caixa input para inserção de arquivos no formulario</p>
+                    <blockquote>
+                        <p>
+                            definir o <b>enctype</b> na tag "form" para compreender o tipo de arquivo que será trabalhado em tal formulário;
+                        </p>
+                        <p>
+                            há possibilidade de inserir o atributo "multiple"(boolean) para enviar mais de um arquivo por vez;
+                        </p>
+                        <p>
+                            definir o atributo <b>accept</b> para filtar o tipo de arquivo que o input irá trabalhar.
+                        </p>
+                    </blockquote>
             <h4>tipos de accept file</h4>
                 <p><code>accept=".doc,.docx" --- </code>para filtar e enviar arquivos tipo <b>.doc</b> e <b>.docx</b></p>
                 <p><code>accept="application/msword" --- </code> filtar e enviar arquivo do aplicativo word</p>
