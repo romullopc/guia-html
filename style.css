@@ -119,5 +119,21 @@ abbr{
     padding: 3px;
 }
 
+summary{
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+summary:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px 1px red;
+}
+
+li{
+    list-style: circle;
+    margin-left: 30px;
+}
+
 
 
