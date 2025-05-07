@@ -33,20 +33,18 @@
                 <p><code>boolean --- </code>atributo com duas possibilidades, caso <b>TRUE</b> o atributo é ativado; caso <b>FALSE</b> o atributo é omitido</p>
                 <p><code>submit --- </code> atributo para elemento do tipo de enviar dados.</p>
             <h2>tags semânticas</h2>
-            <p><code>article --- </code> é um elemento semântico que representa um conteúdo independente, que pode ser distribuído ou reutilizado de forma isolada. Ela é ideal para marcar conteúdos como artigos de revista, postagens de blog, notícias ou qualquer outra seção de conteúdo autocontida; Utilizada opcionalmente quando o conteúdo seja diferente de "header, nav, footer"</p>
-            <blockquote>
-                <p>Principais características da tag <i>article</i>:</p>
-                <p>Conteúdo Autônomo: O conteúdo dentro de uma tag <i>article</i> faz sentido sozinho, sem depender de outros elementos.</p> 
-                <p>Reutilizável: Pode ser compartilhado ou republicado independentemente, como em feeds RSS.</p>
-                <p>Exemplos de uso: Postagens de blog, artigos em jornais, revistas, comentários ou respostas em um fórum.</p>
-            </blockquote>
-            <hr>
-            <p><code>aside --- </code>tag semântica, é um conteúdo secundário deve estar diretamente relacionado ao conteúdo circundante. geralmente usado para publicidade, nota de curiosidades, citação de um artigo ou uma lista de <i>link</i>(nav), <i>"blogroll"</i>.</p>
-            <hr>
-            <p>footer</p>
-            <p>main</p>
-            <p>nav</p>
-            <p>section</p>
+                <p><code>article --- </code> é um elemento semântico que representa um conteúdo independente, que pode ser distribuído ou reutilizado de forma isolada. Ela é ideal para marcar conteúdos como artigos de revista, postagens de blog, notícias ou qualquer outra seção de conteúdo autocontida; Utilizada opcionalmente quando o conteúdo seja diferente de "header, nav, footer"</p>
+                    <blockquote>
+                        <p>Principais características da tag <i>article</i>:</p>
+                        <p>Conteúdo Autônomo: O conteúdo dentro de uma tag <i>article</i> faz sentido sozinho, sem depender de outros elementos.</p> 
+                        <p>Reutilizável: Pode ser compartilhado ou republicado independentemente, como em feeds RSS.</p>
+                        <p>Exemplos de uso: Postagens de blog, artigos em jornais, revistas, comentários ou respostas em um fórum.</p>
+                    </blockquote>
+                <p><code>aside --- </code>tag semântica, é um conteúdo secundário deve estar diretamente relacionado ao conteúdo circundante. geralmente usado para publicidade, nota de curiosidades, citação de um artigo ou uma lista de <i>link</i>(nav), <i>"blogroll"</i>.</p>
+                <p><code>footer --- </code> usado para definir o rodapé de uma página ou de uma seção específica dentro do documento. Ele geralmente contém informações como direitos autorais, links de navegação, créditos, informações de contato ou qualquer outro conteúdo relacionado ao fim de uma página.</p>
+                <p>main</p>
+                <p>nav</p>
+                <p>section</p>
         </div>
             <H2>BODY</H2>
                 <p>É o container de todos elementos visiveis</p>
@@ -164,7 +162,26 @@
                         </details>
                     </section>
                 <p><code>div</code> --- é um container genérico utilizado para formatação e organização de códigos.</p>
-                <p><code>em ---</code>- <em> (ênfase): Usada para indicar que o texto deve ser enfatizado. Além da aparência em itálico, navegadores e leitores de tela interpretam essa tag semanticamente, podendo alterar a entonação ao ler o conteúdo em voz alta.</p>
+                <p><code>em ---</code> (ênfase): Usada para indicar que o texto deve ser enfatizado. Além da aparência em itálico, navegadores e leitores de tela interpretam essa tag semanticamente, podendo alterar a entonação ao ler o conteúdo em voz alta.</p>
+                <p><code>embed --- </code>  usado para incorporar conteúdo externo dentro de uma página da web. Ele pode ser utilizado para exibir vídeos, áudio, documentos ou outros tipos de mídia interativa fornecidos por aplicativos externos ou plug-ins de navegador.</p>
+                    <section id="atributos_embed" class="divisao">
+                        <h3>atributos embed</h3>
+                        <p><code>src ---</code> Define a URL do recurso incorporado.</p>
+                        <p><code>type ---</code> Especifica o tipo MIME do conteúdo.</p>
+                        <p><code>width e height --- </code> Determina as dimensões do recurso incorporado.</p>
+                        <blockquote id="citacao_embed">
+                            <p><b>Uso recomendado:</b> Embora o embed ainda seja suportado, muitos navegadores modernos descontinuaram o suporte a plug-ins. Por isso, é mais aconselhável usar iframe ou object para incorporar conteúdo.</p>
+                        </blockquote>
+                    </section>
+                <p><code>figure ---</code> é um conteiner usado para agrupar conteúdo autocontido, como imagens, diagramas, trechos de código ou citações, junto com uma legenda opcional. Ela permite que esse conteúdo seja tratado como uma unidade independente dentro do documento.</p>
+                    <section id="atributos_figure" class="divisao">
+                        <h3>atributos figure</h3>
+                        <p><code>figcaption --- </code> é usado para fornecer uma legenda ou descrição para o conteúdo contido dentro da tag figure. Ele deve ser o primeiro elemento filho dentro da tag figure.</p>
+                        <blockquote id="citacao_figcaption">
+                            <p>O elemento figcaption é útil para fornecer contexto adicional sobre a imagem, gráfico ou outro conteúdo visual, ajudando os leitores a entender melhor o que estão vendo.</p>
+                        </blockquote>
+
+                    </section>
                 <hr>
                 <h3>Tabelas</h3>
                     <div id="div_table">
